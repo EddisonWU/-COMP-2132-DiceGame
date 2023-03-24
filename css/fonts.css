@@ -1,0 +1,11 @@
+/*Header*/
+@font-face {
+    font-family: 'Bili';
+    src: url(../fonts/billionstar/Billionstar.ttf);
+}
+
+/*Text */
+@font-face {
+    font-family: 'Robo';
+    src: url('../fonts/Roboto/Roboto-BlackItalic.ttf');
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/gamestyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="./scripts/jquery-3.4.1.min.js" defer></script>
+    <script src="./scripts/dicgame.js" defer></script>
+    <script src="./scripts/projectFunction.js" defer></script>
+    <script src="./scripts/gamerules.js" defer></script>
+   
+    <title>COMP 2132 Final Project</title>
+   
+</head>
+    <header class="header" id="header">
+        <h1 class="title">COMP 2132 Final Project</h1>
+        <div class="gamebutton">
+            <button class="gamerules" id="gamerules" onclick="openNav()">Game Rules</button>
+        </div>
+    </header>
+        
+
+    <body>
+        <div class="GameBackGround" id="GameBackGround">
+            <img class="backgroundpicture" id="backgroundpicture" src="./images/backgroundgame.png" alt="GameBackGround Picture">
+               
+            <div class="Spaces" id="Spaces">
+                <div class="GameName" id="GameName">
+                    <h1>Dice Game</h1>
+                </div>
+                <div class="GameSpaces" id="GameSpaces">
+                    <div class="GameShow" id="GameShow">
+                        <div class="Player-Score" id="Player-Score">
+                            <h3>Your Scoreboard</h3>
+                        </div>
+                        
+                        <div class="RollDice-Spaces" id="RollDice-Spaces">
+                            <div class="HumanPlayer" id="HumanPlayer">
+                                <div class="HumanDice" id="HumanDice">
+                                    <img class="humandice1" id="humandice1" src="./images/1-point.png">
+                                    <img class="humandice2" id="humandice2" src="./images/1-point.png">
+                                </div>
+                                <div class="HumanPicture" id="HumanPicture">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="ComputerPlayer" id="ComputerPlayer">
+                                <div class="ComputerDice" id="ComputerDice">
+                                    <img class="computerdice1" id="computerdice1" src="./images/1-point.png">
+                                    <img class="computerdice2" id="computerdice2" src="./images/1-point.png">
+                                </div>
+                                <div class="ComputerPicture" id="ComputerPicture">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Computer-Score" id="Computer-Score">
+                            <h3>Computer Scoreboard </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="rules" id="rules">
+                        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+                        <h2>The Rules for dice are:</h2>
+                        <ol>
+                            <li>1. There will be three rounds</li>
+                            <li>2. Each round, you and the computer will face off by rolling two dice each</li>
+                            <li>3. Each round you will earn a score based on your dice roll:
+                                <ul>
+                                    <li> - If either of your dice are a 1, your score for that round is 0</li>
+                                    <li> - If you roll two of the same number (except 1), your score for that round is twice the sum of the dice values</li>
+                                    <li> - Otherwise, your score for that round is the sum of the two dice values</li>
+                                </ul>
+                            </li>
+                            <li>4. After three rounds, the player with the highest total score wins!</li>
+                        </ol>
+                        <!-- <button class="knowrules" id="knowrules">I Know</button> -->
+                    </div>
+
+                    <div id="winnerwindow" class="winnerwindow">
+                    
+                    </div>
+                  
+
+                    <div class="ButtonSpaces" id="ButtonSpaces">
+                        <button class="NewGameButton" id="NewGameButton">New Game</button>
+                        <button class="RollDiceButton" id="RollDiceButton">Roll Dice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <small>Copyleft &copy; 2023 COMP2132</small>
+    </footer>
+</html>
